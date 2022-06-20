@@ -1,0 +1,81 @@
+/* ------------------Header Css Start here--------------------- */
+.Header {
+    margin:0px auto;
+    padding: 0;
+    height: 100px;
+    width: 1200px;
+    border-bottom:double;
+    border-bottom-color:darkblue;
+    
+}
+
+.HeaderlogoPicture {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 100px;
+    float:left;
+}
+    .HeaderlogoPicture .LogoImage {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: inherit;
+    }
+
+.HeaderText {
+        margin: 0;
+        padding:0;
+        height:inherit;
+        width: 900px;
+        text-align:center;
+        float:left;
+    }
+    .HeaderText .HeaderTextInner {
+        margin: 0;
+        padding: 30px 5px 5px 10px;
+        height: 50%;
+        width: 95%;
+        text-align: left;
+        color:darkblue;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+.HeaderLogin {
+        margin: 0;
+        padding: 0;
+        height: inherit;
+        width: 100px;
+        float: left;
+        
+    }
+    .HeaderLogin .HeaderLoginIcon {
+        margin: 0;
+        padding: 45px 5px 5px 10px;
+        height: 45%;
+        width: 70%;
+        text-align: center;
+        font-size: 16px;
+        color: darkblue;
+    }
+       
+.HeaderSignUp {
+        margin: 0;
+        padding: 0;
+        height: inherit;
+        width: 100px;
+        float: left;
+}
+    .HeaderSignUp .HeaderSignupIcon {
+        margin: 0;
+        padding: 45px 5px 5px 10px;
+        height: 45%;
+        width: 80%;
+        text-align: left;
+        font-size: 16px;
+        color: darkblue;
+    }
+
+
+/* ------------------Header Css Ends here--------------------- */

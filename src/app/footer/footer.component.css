@@ -1,0 +1,92 @@
+/*-------------------Footer Starts Here ------------------------*/
+.Footer {
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to left, rgba(0,0,139,.5), rgba(0, 0, 139,1));
+}
+.FooterCenter {
+    margin: 0px auto;
+    padding: 0;
+    height: inherit;
+    width: 1200px;
+}
+.FooterCenterTop {
+    height: 70%;
+    width: 100%;
+    padding-top: 10px;
+    border-bottom: 1px solid goldenrod;
+}
+ul.FooterCenterContainer {
+    margin:0;
+    padding-left:20px;
+    height:inherit;
+    width:100%;
+    float:left;
+}
+li.FooterCenterContainerHeading {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 25%;
+    float: left;
+    font-size: 24px;
+    color:goldenrod;
+    list-style-type: none;
+}
+ul.FooterCenter2ndContainer {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 100%;
+    float: left;
+    
+}
+
+li.FooterCenter2ndContainerList {
+    margin: 0;
+    padding-top: 1px;
+    height: 20%;
+    width: 100%;
+    float: left;
+    list-style-type: none;
+}
+    li.FooterCenter2ndContainerList a {
+        height: inherit;
+        width: inherit;
+        font-size: 16px;
+        color: rgb(255, 255, 240);
+        text-decoration: none;
+        display: inline-block;
+    }
+
+li.FooterCenter2ndContainerListFollowUs {
+    margin: 0;
+    padding-top: 15px;
+    height: 40%;
+    width: 15%;
+    float: left;
+    list-style-type: none;
+}
+    li.FooterCenter2ndContainerListFollowUs a {
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+    }
+.FooterFacebookIcon, .FooterYoutubeIcon, .FooterInstaIcon, .FooterTwitterIcon {
+    font-size: 30px;
+    color: rgb(255, 255, 240);
+}
+
+
+.FooterBottomCopyright {
+    height: 20%;
+    width: 100%;
+    padding-top: 8px;
+    float: left;
+    font-size: 16px;
+    color: rgb(255, 255, 240);
+    text-align: center;
+}
+
+
+/*-------------------Footer Ends Here ------------------------*/

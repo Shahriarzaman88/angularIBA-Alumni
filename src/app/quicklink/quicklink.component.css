@@ -1,0 +1,120 @@
+/*-------------------QuickLinks Stars Here ------------------------*/
+.QuickLinks {
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    width: 100%;
+    /*background: linear-gradient(to left, rgba(0,0,139,.5), rgba(0, 0, 139,1));*/
+}
+.QuickLinksCenterMain {
+    margin: 0;
+    padding: 0;
+    height: 70%;
+    width: 100%;
+    background: linear-gradient(to left, rgba(0,0,139,.5), rgba(0, 0, 139,1));
+}
+
+
+.QuickLinksCenter {
+    margin: 0px auto;
+    padding: 0;
+    height: 130%;
+    width: 1200px;
+    /*background: rgb(182, 208, 226)*/
+}
+
+
+.QuickLinksCenterTop {
+    height: 15%;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(255, 255, 240);
+    border-bottom: 1px solid rgb(255, 255, 240);
+    /*border-bottom: 1px solid rgb(255, 255, 240);*/
+}
+.QuickLinksCenterBottom {
+    height: 85%;
+    width: 100%;
+    padding-top:20px;
+}
+.QuickLinksBottomContainer {
+    height:100%;
+    width:25%;
+    float:left;
+}
+.QuickLinksContainerImage {
+    height: 90%;
+    width: 95%;
+    padding:10px 10px 0 10px;
+    position: relative;
+    
+}
+.QuickLinksImage {
+    width: inherit;
+    height: 100%;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: 1px solid goldenrod;
+    border-radius: 15px;
+}
+
+.QuickLinksOverView {
+    height: 35%;
+    width: inherit;
+    transition: 1s ease;
+    position: relative;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    transform: translate(0, -175%);
+    /*-ms-transform: translate(0, -500%);*/
+    text-align: center;
+    font-size: 14px;
+    
+    overflow: hidden;
+}
+    .QuickLinksOverView a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+.QuickLinksContainerImage:hover .QuickLinksImage {
+    opacity: 0.4;
+}
+
+.QuickLinksContainerImage:hover .QuickLinksOverView {
+    opacity: 1;
+    text-align: center;
+}
+.QuickLinksContainerHeading {
+    height: 15%;
+    width: 100%;
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+    .QuickLinksContainerHeading a {
+        padding:5px;
+        height: inherit;
+        width: inherit;
+        font-size: 22px;
+        color: darkblue;
+        font-weight: bold;
+        border-radius:5px;
+        text-decoration: none;
+        
+    }
+        .QuickLinksContainerHeading a:hover {
+            background: rgb(25,25,112);
+            color: rgb(255, 255, 240);
+        }
+
+
+
+/*-------------------QuickLinks Ends Here ------------------------*/

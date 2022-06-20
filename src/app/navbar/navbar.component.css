@@ -1,0 +1,139 @@
+/* ------------------Navbar Css Start here--------------------- */
+
+
+.NavHeader {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 100%;
+    display: inline-block;
+    /*background: rgb(25, 25, 112);*/
+    background: linear-gradient(to left, rgba(0,0,139,.5), rgba(0, 0, 139,1));
+}
+
+.NavMain {
+    margin: 0px auto;
+    padding: 0;
+    height: inherit;
+    width: 1200px;
+    /*background: rgb(182, 208, 226)*/
+}
+ul.NavMainMenu {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: inherit;
+    text-align: left;
+}
+li.NavMainList {
+    padding-left: 10px;
+    height: inherit;
+    width: 15%;
+    float: left;
+    display: inline-block;
+    
+}
+.NavSubMenu li a i,
+.down
+{
+    float: right;
+    margin-right:10px;
+    margin-top:5px;
+}
+
+li.NavMainList a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    color: rgb(255, 255, 240);
+    font-size: 22px;
+}
+    li.NavMainList a:link {
+        text-decoration: none;
+    }
+
+li.NavMainList:hover {
+    background-color: darkblue;
+}
+
+
+ul.NavSubMenu {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 150%;
+    display: none;
+}
+li.NavMainList:hover ul.NavSubMenu {
+    display: block;
+}
+
+li.NavSubList {
+    height: inherit;
+    width: 100%;
+    margin-left: -10px;
+    padding-left: 10px;
+    display: inline-block;
+    background: none;
+    background: rgb(25, 25, 112);
+}
+    li.NavSubList a {
+        
+        height: 100%;
+        width: 100%;
+    }
+    li.NavSubList a:link {
+        text-decoration: none;
+    }
+
+    li.NavSubList:hover {
+        background-color: rgb(20, 52, 164);
+        color: white;
+    }
+
+ul.Nav2ndSubMenu {
+    margin: 0;
+    padding-left: 100%;
+    float: left;
+    height: inherit;
+    width: inherit;
+    display: none;
+    margin-top:-30px;
+}
+
+
+
+li.Nav2ndSubList {
+    height: inherit;
+    width: inherit;
+    padding-left: 10px;
+    list-style-type: none;
+    background: none;
+    background: rgb(25, 25, 112);
+}
+
+li.NavSubList:hover ul.Nav2ndSubMenu {
+    display: block;
+}
+
+
+    li.Nav2ndSubList a {
+        height: 100%;
+        width: 100%;
+    }
+
+        li.Nav2ndSubList a:link {
+            text-decoration: none;
+        }
+
+li.Nav2ndSubList:hover {
+    background-color: rgb(15, 82, 186);
+    color: white;
+}
+
+
+
+
+
+/* ------------------Navbar Css End here--------------------- */
+

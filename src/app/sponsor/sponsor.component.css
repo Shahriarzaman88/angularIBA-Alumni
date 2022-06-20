@@ -1,0 +1,63 @@
+/*-------------------Sponsor Stars Here ------------------------*/
+.Sponsor {
+    height: 300px;
+    width: 100%;
+    /*background: rgb(255, 255, 240);*/
+}
+.SponsorCenter {
+    margin: 0px auto;
+    padding: 0;
+    height: inherit;
+    width: 1200px;
+}
+.SponsorCenterTop {
+    padding-top:10px;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight:bold;
+    color: darkblue;
+    border-bottom: 1px solid goldenrod;
+}
+.SponsorCenterBottom {
+    height: 75%;
+    width: 100%;
+}
+ul.SponsorCenterBottomContainer {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:25%;
+    float:left;
+}
+li.SponsorCenterBottomContainerHeading {
+    margin: 0;
+    padding:0;
+    height: 20%;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 26px;
+    font-weight:bold;
+    color: darkblue;
+    list-style-type: none;
+    
+    
+}
+li.SponsorCenterBottomContainerImage {
+    margin: 0;
+    padding-left: 50px;
+    height: 50%;
+    width: 70%;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+}
+.SponsorListImage {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(25,25,112);
+}
+/*-------------------Sponsor Ends Here ------------------------*/

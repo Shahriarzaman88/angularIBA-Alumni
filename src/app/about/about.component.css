@@ -1,0 +1,80 @@
+/*-------------------About Starts Here ------------------------*/
+
+.About {
+    margin: 0px auto;
+    padding: 0;
+    height: 400px;
+    width: 1200px;
+    border-bottom: double;
+    /*background: linear-gradient(to left, rgba(0,0,139,.5), rgba(0, 0, 139,1));*/
+}
+
+.AboutText {
+    margin: 0;
+    padding-top: 10px;
+    height: inherit;
+    width: 50%;
+    float:left;
+}
+.AboutTextHeading {
+    height: 15%;
+    width: 100%;
+    border-bottom:1px solid;
+    border-bottom-color: darkblue;
+}
+    .AboutTextHeading a {
+        height: inherit;
+        width: inherit;
+        padding-left: 20px;
+        font-size: 42px;
+        font-weight: bold;
+        color: darkblue;
+        text-decoration: none;
+    }
+
+.AboutTextDescription {
+    padding:10px 20px ;
+    height: 70%;
+    width: 95%;
+    display: inline-block;
+    font-size: 14px;
+    color: darkblue;
+    overflow:hidden;
+}
+
+.AboutTextLink {
+    height: 15%;
+    width: 100%;
+    text-align:center;
+    
+}
+    .AboutTextLink a {
+        height: inherit;
+        width: inherit;
+        padding-left: 20px;
+        font-size: 12px;
+        color: darkblue;
+        text-decoration: none;
+    }
+
+
+
+
+
+.AboutImage {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 50%;
+    float: right;
+}
+.HistoryImage {
+    padding: 15px;
+    height: 90%;
+    width: 90%;
+    border-radius: 25px;
+}
+
+
+
+/*-------------------About Ends Here ------------------------*/

@@ -1,0 +1,180 @@
+/*-------------------SlideShow Starts Here ------------------------*/
+
+
+.SlideShow {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.SlideShowCenter {
+    margin: 0px auto;
+    padding: 0;
+    height: 450px;
+    width: 100%;
+}
+
+.SlideShowLeft {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 2.5%;
+    float: left;
+    text-align: center;
+    z-index: 1;
+}
+
+.SlideShowLeftLink {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+    .SlideShowLeftLink:hover {
+        opacity: 0.3;
+        background-color: rgb(15, 82, 186);
+    }
+.leftArrow {
+    color: rgb(255, 255, 240);
+    margin-top: 450%;
+    font-size: 25px;
+}
+
+
+
+
+
+
+.SlideShowCenterMain {
+    position:relative;
+    height: inherit;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    z-index:-1;
+}
+.SliderListLink a {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 100%;
+}
+ul.Slider {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 100%;
+}
+li.SliderList {
+    height: inherit;
+    width: inherit;
+    float:left;
+    list-style-type: none;
+}
+.SliderListImage {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+.SlideShowCenterButon {
+    height: 5%;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    background: darkgrey;
+}
+
+
+
+
+.SlideShowRight {
+    position: absolute;
+    right:0;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 2.5%;
+    float: left;
+    text-align: center;
+    z-index:1;
+
+}
+.SlideShowRightLink {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+    .SlideShowRightLink:hover {
+        opacity: 0.3;
+        background-color: rgb(15, 82, 186);
+    }
+.rightArrow {
+    color: rgb(255, 255, 240);
+    margin-top: 450%;
+    font-size: 25px;
+}
+
+
+.SlideShowNavigation {
+    position: relative;
+    bottom: 35px;
+    left: 45%;
+    margin: 0;
+    padding: 0;
+    height: 5%;
+    width: 5%;
+    float: left;
+}
+
+
+ul.SliderNaviagtion {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+}
+
+li.SliderNaviagtionList {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: 25%;
+    float: left;
+    border-radius:50%;
+}
+    li.SliderNaviagtionList:hover {
+        background-color: rgb(15, 82, 186);
+        opacity: 0.3;
+    }
+
+
+.SlideShowNavLink {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    width: inherit;
+    font-size: 22px;
+    text-align: center;
+    list-style-type: none;
+    color: white;
+}
+
+    .SlideShowNavLink:hover {
+        background-color: rgb(15, 82, 186);
+        opacity: 0.3;
+    }
+   
+    
+
+
+
+/*-------------------SlideShow Ends Here ------------------------*/
