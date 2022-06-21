@@ -49,15 +49,17 @@ li.SponsorCenterBottomContainerImage {
     margin: 0;
     padding-left: 50px;
     height: 50%;
-    width: 70%;
+    width: 80%;
     float: left;
     text-align: center;
     list-style-type: none;
+    
 }
 .SponsorListImage {
     margin: 0;
     height: 100%;
     width: 100%;
     border: 1px solid rgb(25,25,112);
+    border-radius: 10px;
 }
 /*-------------------Sponsor Ends Here ------------------------*/

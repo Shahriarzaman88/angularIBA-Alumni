@@ -1,4 +1,79 @@
 <p>sponsor-list works!</p>
 <div class="container">
     <router-outlet></router-outlet>
+    <div class="container">
+        <div class="mb-3">
+            <div class="row">
+                <div class="col my-2">
+                    <button class="btn btn-secondary btn-block"><i class="fas fa-plus"></i>Add Attribute</button>
+                </div>
+
+            </div>
+
+
+            <div class="bg-primary mt-2 p-1">
+                <h2 class="text-secondary">List of Sponsors</h2>
+            </div>
+
+
+
+            <table class="table table-striped">
+                <thead class="bg-secondary text-info">
+                    <tr>
+                        <th>Name</th>
+                        <th>Priority</th>
+                        <th>Effective Date</th>
+                        <th>End Date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>Admin Name</td>
+                        <td>Admin Priority</td>
+                        <td>Admin Effective Date:</td>
+                        <td>Admin End date</td>
+                        <td>
+                            <button class="btn btn-primary"><i class="fas fa-trash-alt"></i> Edit</button>
+                            <button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+
+
+
+            <!-- Pagination -->
+
+
+
+        </div>
+
+        <nav class="">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">Previous</a>
+                </li>
+                <li class="page-item active">
+                    <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
 </div>

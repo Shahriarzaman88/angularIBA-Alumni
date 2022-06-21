@@ -1,4 +1,99 @@
 <p>event-list works!</p>
 <div class="container">
     <router-outlet></router-outlet>
+    <div class="row">
+        <div class="col-md-6 ml-auto">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Events..." />
+                <div class="input-group-append">
+                    <button class="btn btn-secondary">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </div>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-header bg-primary">
+                        <h1 class="text-secondary" style="padding:10px ;">Events Archive</h1>
+                    </div>
+                            <table class="table table-striped">
+                        <thead class="bg-secondary text-info">
+                            <tr>
+                                <th Class="d-none d-sm-block">#</th>
+                                <th>Title</th>
+                                <th>Location</th>
+                                <th>Date</th>
+                                <th Class="d-none d-sm-block">Time</th>
+                               
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                       
+                            <tr>
+                                <td Class="d-none d-sm-block">1</td>
+                                <td>Event Heading</td>
+                                <td>Event Location</td>
+                                <td>Event Date</td>
+                                <td  Class="d-none d-sm-block">Event TIme</td>
+                                
+                                <td>
+                                    <a href="#" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>Event Details</a>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i>Delete</button>
+                                </td>
+                            </tr>
+                       
+                            </tbody>
+                            <tbody>
+                       
+                                <tr>
+                                    <td Class="d-none d-sm-block">2</td>
+                                    <td>Event Heading 2</td>
+                                    <td>Event Location 2</td>
+                                    <td>Event Date 2</td>
+                                    <td  Class="d-none d-sm-block">Event TIme 2</td>
+                                    
+                                    <td>
+                                        <a href="#" class="btn btn-secondary" ><i class="fas fa-angle-double-right"></i>Event Details</a>
+                                        <button class="btn btn-danger"><i class="fas fa-trash-alt"></i>Delete</button>
+                                    </td>
+                                </tr>
+                           
+                                </tbody>
+                    </table>
+                        
+                    <!-- Pagination -->
+                    
+                </div>
+
+                <nav class="">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a href="#" class="page-link">Previous</a>
+                            </li>
+                            <li class="page-item active">
+                                <a href="#" class="page-link">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,1 +1,90 @@
 <p>quicklink-list works!</p>
+<div class="container">
+    <router-outlet></router-outlet>
+    <div class="row">
+        <div class="col-md-6 ml-auto">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Events..." />
+                <div class="input-group-append">
+                    <button class="btn btn-secondary">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="card-header bg-primary">
+                        <h1 class="text-secondary" style="padding:10px ;">Quicklinks List</h1>
+                    </div>
+                            <table class="table table-striped">
+                        <thead class="bg-secondary text-info">
+                            <tr>
+                                <th>#</th>
+                                <th>Title</th>
+                                <th>Written By</th>
+                                <th>Date</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td>1</td>
+                                <td>Quicklinks 1</td>
+                                <td>Quicklinks Written By 1</td>
+                                <td>Quicklinks Date 1</td>
+                                <td>
+                                    <a href="#" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>Details</a>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Quicklinks 2</td>
+                                <td>Quicklinks Written By 2</td>
+                                <td>Quicklinks Date 2</td>
+                                <td>
+                                    <a href="#" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>Details</a>
+                                    <button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</button>
+                                </td>
+                            </tr>
+                           
+                                </tbody>
+                    </table>
+                        
+                    <!-- Pagination -->
+                    
+                </div>
+
+                <nav class="">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a href="#" class="page-link">Previous</a>
+                            </li>
+                            <li class="page-item active">
+                                <a href="#" class="page-link">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="#" class="page-link">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+

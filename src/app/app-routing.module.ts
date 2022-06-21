@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NewsDetailComponent } from './news/news-detail/news-detail.component';
 import { NewsListComponent } from './news/news-list/news-list.component';
 import { NewsComponent } from './news/news.component';
+import { QuicklinkDescriptionComponent } from './quicklink/quicklink-description/quicklink-description.component';
 import { QuicklinkComponent } from './quicklink/quicklink.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { SponsorListComponent } from './sponsor/sponsor-list/sponsor-list.component';
@@ -48,6 +49,14 @@ const routes: Routes = [
       ]
   },
   { path: 'quicklink', component: QuicklinkComponent },
+  {
+    path: 'quicklink', component: QuicklinkComponent,
+    children:
+      [
+        { path: 'quicklinkDetail', component: QuicklinkDescriptionComponent }
+      ]
+  },
+
   { path: 'news', component: NewsComponent },
   {
     path: 'news', component: NewsComponent,
