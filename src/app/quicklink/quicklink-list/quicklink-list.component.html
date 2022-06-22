@@ -33,13 +33,13 @@
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody *ngFor="let quicklink of quicklinks">
                         
                             <tr>
                                 <td>1</td>
-                                <td>Quicklinks 1</td>
-                                <td>Quicklinks Written By 1</td>
-                                <td>Quicklinks Date 1</td>
+                                <td>{{quicklink.quicklinkHeading}}</td>
+                                <td>Quicklinks Written By 1{{quicklink.quicklinkWrittenBy}}</td>
+                                <td>Quicklinks Date 1{{quicklink.quicklinkDate}}</td>
                                 <td>
                                     <a href="#" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>Details</a>
                                     <button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</button>

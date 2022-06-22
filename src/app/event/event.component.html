@@ -9,35 +9,35 @@
         </div>
         <div class="EventsCenterBottom">
             <div class="EventsCenterBottomContainer">
-                <div class="EventsContainerLeft">
-                    <a routerLink="/event/eventDetail">
-                        <div class="EventsContainerLeftMonth">August</div>
+                <div class="EventsContainerLeft" *ngFor="let event of events">
+                    <a routerLink="/event/eventDetail" >
+                        <div class="EventsContainerLeftMonth">{{event.eventDate}}</div>
                         <div class="EventsContainerLeftDate">13</div>
                         <div class="EventsContainerLeftYear">2021</div>
                     </a>
                 </div>
-                <div class="EventsContainerRight">
-                    <a routerLink="/event/eventDetail">
-                        <div class="EventsContainerRightHeading">Summer Picnic</div>
-                        <div class="EventsContainerRightLocation">Location: Scarborough</div>
-                        <div class="EventsContainerRightTime">Time: 12 pm till 5 pm</div>
+                <div class="EventsContainerRight" *ngFor="let event of events">
+                    <a routerLink="/event/eventDetail" >
+                        <div class="EventsContainerRightHeading">{{event.eventHeading}}</div>
+                        <div class="EventsContainerRightLocation">{{event.eventLocation}}</div>
+                        <div class="EventsContainerRightTime">Time: {{event.eventTime}}</div>
                     </a>
                 </div>
             </div>
 
             <div class="EventsCenterBottomContainer">
-                <div class="EventsContainerLeft">
-                    <a routerLink="/event/eventDetail">
-                        <div class="EventsContainerLeftMonth">August</div>
+                <div class="EventsContainerLeft" *ngFor="let event of events">
+                    <a routerLink="/event/eventDetail" >
+                        <div class="EventsContainerLeftMonth">{{event.eventDate}}</div>
                         <div class="EventsContainerLeftDate">13</div>
                         <div class="EventsContainerLeftYear">2021</div>
                     </a>
                 </div>
-                <div class="EventsContainerRight">
-                    <a routerLink="/event/eventDetail">
-                        <div class="EventsContainerRightHeading">Summer Picnic</div>
-                        <div class="EventsContainerRightLocation">Location: Scarborough</div>
-                        <div class="EventsContainerRightTime">Time: 12 pm till 5 pm</div>
+                <div class="EventsContainerRight" *ngFor="let event of events">
+                    <a routerLink="/event/eventDetail" >
+                        <div class="EventsContainerRightHeading">{{event.eventHeading}}</div>
+                        <div class="EventsContainerRightLocation">{{event.eventLocation}}</div>
+                        <div class="EventsContainerRightTime">Time: {{event.eventTime}}</div>
                     </a>
                 </div>
             </div>

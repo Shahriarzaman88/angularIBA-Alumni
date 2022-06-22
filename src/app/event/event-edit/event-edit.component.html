@@ -1,0 +1,27 @@
+<p>event-edit works!</p>
+<div *ngIf="event">
+    <h2>{{event.eventHeading}}</h2>
+    <div>
+        Event Heading: 
+        <input [(ngModel)]="event.eventHeading" placeholder="Enter Event Heading"/>
+    </div>
+    <div>
+        Event Description: 
+        <input [(ngModel)]="event.eventDescription" placeholder="Enter Event Description"/>
+    </div>
+    <div>
+        Event Location: 
+        <input [(ngModel)]="event.eventLocation" placeholder="Enter Event Location"/>
+    </div>
+    <div>
+        Event Date: 
+        <input [(ngModel)]="event.eventDate" placeholder="Enter Event Date"/>
+    </div>
+    <div>
+        Event Time: 
+        <input [(ngModel)]="event.eventTime" placeholder="Enter Event Time"/>
+    </div>
+    <button (click)="updateEvent(event)" *ngIf="event.Id">Save</button>
+    <button (click)="deleteEvent(event)" *ngIf="event.Id">Delete</button>
+    <button (click)="createEvent(event)" *ngIf="!event.Id">Create</button>
+</div>

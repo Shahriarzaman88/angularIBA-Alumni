@@ -7,19 +7,15 @@
         <div class="NewsCenterTop">
             <i class="fas fa-newspaper"></i>News Portal
         </div>
-        <div class="NewsCenterBottom">
+        <div class="NewsCenterBottom" *ngFor="let news of newses">
             <div class="NewsCenterBottomContainerLeft">
                 <img class="NewsMainImage" src="/assets/Images/News1.jpg" alt=""/>
                 <div class="NewsBottomContainerhead">
-                    <a routerLink="/news/newsDetail">News Heading 1</a>
+                    <a routerLink="/news/newsDetail">News Heading: {{news.newsHeading}}</a>
                 </div>
-                <div class="NewsBottomContainerDate">19th oct 2021</div>
+                <div class="NewsBottomContainerDate">News Date: {{news.newsDate}}</div>
                 <div class="NewsBottomContainerDescription">
-                    It is an immense pleasure and honour for me to not only continue the legacy of IBA, but to take it forward.
-                    While the whole world is going through an unprecedented crisis like no other, 2021 marks a number of milestones for Bangladesh. 
-                    From a bottomless basket to one of the fastest growing economies in the world, achieving the status of a middle-income country, celebrating the centenary birth anniversary of our Father of the Nation, the golden jubilee of independence of Bangladesh and of course...
-                    More
-
+                    {{news.newsDescription}}
                 </div>
 
             </div>

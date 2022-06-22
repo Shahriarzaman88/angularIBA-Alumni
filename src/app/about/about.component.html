@@ -1,16 +1,13 @@
 <div class="container">
     <router-outlet></router-outlet>
 </div>
-<div class="About">
+<div class="About" *ngFor="let about of about">
     <div class="AboutText">
         <div class="AboutTextHeading" >
-            <a href="#"><i class="fas fa-landmark"></i> History of IBA</a>
+            <a href="#"><i class="fas fa-landmark"></i>{{about.aboutHeading}}</a>
         </div>
         <div class="AboutTextDescription">
-            The Institute of Business Administration (IBA), University of Dhaka, is the pioneer in rendering business education in Bangladesh. It is also the leading business school in the country. Commitment to the highest educational standards distinguishes IBA among the educational institutes in Bangladesh. This reputation has been achieved through a tradition of excellence and dedication to quality education and research. IBA graduates are highly sought after by the industry and IBA is proud of its students who have made outstanding contributions to various fields, both at home and abroad.
-IBA was founded in 1966 in collaboration with Indiana University, Bloomington, USA, under a Ford Foundation Financial Assistance Program with the objective of providing professional training to create future business leaders. The founder-director of IBA is Professor M. Shafiullah. IBA began its journey by launching its flagship MBA program. In the 1970s, the MPhil and PhD programs were introduced. In response to the growing demand for business education at the undergraduate level, the BBA program was started in 1993. In 2007, the Executive MBA program was launched to cater to the growing demand for quality education among mid-career executives.
-In a proud history spanning more than four decades, the teachers and students of IBA have partnered together to achieve an enviable level of excellence in Bangladesh. A variety of factors have contributed to its success, some of which are:
-
+            {{about.aboutDescription}}
         </div>
         <div class="AboutTextLink">
             <a routerLink="/about">READ MORE...</a>

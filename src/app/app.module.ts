@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
@@ -27,6 +27,7 @@ import { AboutDescriptionComponent } from './about/about-description/about-descr
 import { QuicklinkDescriptionComponent } from './quicklink/quicklink-description/quicklink-description.component';
 import { QuicklinkListComponent } from './quicklink/quicklink-list/quicklink-list.component';
 import { SponsorListComponent } from './sponsor/sponsor-list/sponsor-list.component';
+import { EventEditComponent } from './event/event-edit/event-edit.component';
 
 @NgModule({
   declarations: [
@@ -51,13 +52,15 @@ import { SponsorListComponent } from './sponsor/sponsor-list/sponsor-list.compon
     AboutDescriptionComponent,
     QuicklinkDescriptionComponent,
     QuicklinkListComponent,
-    SponsorListComponent
+    SponsorListComponent,
+    EventEditComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

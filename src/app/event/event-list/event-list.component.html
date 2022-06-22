@@ -22,6 +22,7 @@
                 <div class="card mb-3">
                     <div class="card-header bg-primary">
                         <h1 class="text-secondary" style="padding:10px ;">Events Archive</h1>
+                        <button class="btn btn-primary">Create New Event</button>
                     </div>
                             <table class="table table-striped">
                         <thead class="bg-secondary text-info">
@@ -35,17 +36,17 @@
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody *ngFor="let event of events">
                        
                             <tr>
                                 <td Class="d-none d-sm-block">1</td>
-                                <td>Event Heading</td>
-                                <td>Event Location</td>
-                                <td>Event Date</td>
-                                <td  Class="d-none d-sm-block">Event TIme</td>
+                                <td>{{event.eventHeading}}</td>
+                                <td>{{event.eventLocation}}</td>
+                                <td>{{event.eventDate}}</td>
+                                <td  Class="d-none d-sm-block">{{event.eventTime}}</td>
                                 
                                 <td>
-                                    <a href="#" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>Event Details</a>
+                                    <button class="btn btn-success"><i class="fas fa-trash-alt"></i>Edit</button>
                                     <button class="btn btn-danger"><i class="fas fa-trash-alt"></i>Delete</button>
                                 </td>
                             </tr>

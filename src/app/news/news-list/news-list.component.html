@@ -32,13 +32,13 @@
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody *ngFor="let news of newses">
                     
                         <tr>
                             <td>1</td>
-                            <td>News 1</td>
-                            <td>Written By 1</td>
-                            <td>Date of news 1</td>
+                            <td>News Head 1: {{news.newsHeading}}</td>
+                            <td>Written By 1: {{news.newsWrittenBy}}</td>
+                            <td>Date of news 1: {{news.newsDate}}</td>
                             <td>
                                 <a href="#" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i>Details</a>
                                 <button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</button>
