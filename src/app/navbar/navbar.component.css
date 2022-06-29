@@ -96,7 +96,7 @@ ul.Nav2ndSubMenu {
     padding-left: 100%;
     float: left;
     height: inherit;
-    width: inherit;
+    width: 160%;
     display: none;
     margin-top:-30px;
 }
@@ -124,6 +124,8 @@ li.NavSubList:hover ul.Nav2ndSubMenu {
 
         li.Nav2ndSubList a:link {
             text-decoration: none;
+            height: inherit;
+            width: inherit;
         }
 
 li.Nav2ndSubList:hover {

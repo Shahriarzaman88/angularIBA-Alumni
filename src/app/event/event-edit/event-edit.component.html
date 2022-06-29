@@ -1,5 +1,5 @@
 <p>event-edit works!</p>
-<div *ngIf="event">
+<div *ngIf="event" (eventsUpdated)="updateEventList($event)">
     <h2>{{event.eventHeading}}</h2>
     <div>
         Event Heading: 
@@ -21,7 +21,8 @@
         Event Time: 
         <input [(ngModel)]="event.eventTime" placeholder="Enter Event Time"/>
     </div>
+    <button (click)="createEvent(event)" *ngIf="!event.Id">Create</button>
     <button (click)="updateEvent(event)" *ngIf="event.Id">Save</button>
     <button (click)="deleteEvent(event)" *ngIf="event.Id">Delete</button>
-    <button (click)="createEvent(event)" *ngIf="!event.Id">Create</button>
+    
 </div>

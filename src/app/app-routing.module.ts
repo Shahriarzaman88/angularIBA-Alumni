@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutDescriptionComponent } from './about/about-description/about-description.component';
 import { AboutComponent } from './about/about.component';
 import { EventDetailComponent } from './event/event-detail/event-detail.component';
+import { EventEditComponent } from './event/event-edit/event-edit.component';
 import { EventListComponent } from './event/event-list/event-list.component';
 import { EventComponent } from './event/event.component';
 import { FooterComponent } from './footer/footer.component';
@@ -48,7 +49,11 @@ const routes: Routes = [
         { path: 'description', component: AboutDescriptionComponent }
       ]
   },
+
+  
   { path: 'quicklink', component: QuicklinkComponent },
+
+
   {
     path: 'quicklink', component: QuicklinkComponent,
     children:
@@ -58,6 +63,8 @@ const routes: Routes = [
   },
 
   { path: 'news', component: NewsComponent },
+
+
   {
     path: 'news', component: NewsComponent,
     children:
@@ -65,6 +72,7 @@ const routes: Routes = [
         { path: 'newsDetail', component: NewsDetailComponent }
       ]
   },
+
   {
     path: 'news', component: NewsComponent,
     children:
@@ -72,19 +80,32 @@ const routes: Routes = [
         { path: 'newsList', component: NewsListComponent }
       ]
   },
+
   { path: 'event', component: EventComponent },
+
+
+
   {
     path: 'event', component: EventComponent,
     children:
       [
-        { path: 'eventDetail', component: EventDetailComponent }
+        { path: 'eventDetail/:id', component: EventDetailComponent }
+      ]
+  },
+
+
+  {
+    path: 'event', component: EventComponent,
+    children:
+      [
+        { path: 'eventList', component: EventListComponent }
       ]
   },
   {
     path: 'event', component: EventComponent,
     children:
       [
-        { path: 'eventList', component: EventListComponent }
+        { path: 'eventEdit', component: EventEditComponent }
       ]
   },
   { path: 'sponsor', component: SponsorComponent },

@@ -17,7 +17,24 @@ export class EventDetailComponent implements OnInit {
 
   ngOnInit(): void {
     //this.events = this.EventService.getEvents();
+    this.getEvents();
     console.log(this.events);
   }
+  getEvents() {
+    this.EventService.getEvents("Event").subscribe(
+
+      (res) => {
+        this.events = res
+        console.log(this.events, "Event List");
+      },
+      (err) => {
+        console.log("Error");
+      }
+
+     
+      
+    )
+  }
+  
 
 }
