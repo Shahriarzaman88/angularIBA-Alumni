@@ -105,7 +105,8 @@ const routes: Routes = [
     path: 'event', component: EventComponent,
     children:
       [
-        { path: 'eventEdit', component: EventEditComponent }
+        { path: 'eventEdit/:type/:id', component: EventEditComponent },
+        { path: 'eventAdd/:type', component: EventEditComponent }
       ]
   },
   { path: 'sponsor', component: SponsorComponent },

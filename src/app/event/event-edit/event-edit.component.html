@@ -1,28 +1,65 @@
-<p>event-edit works!</p>
-<div *ngIf="event" (eventsUpdated)="updateEventList($event)">
-    <h2>{{event.eventHeading}}</h2>
-    <div>
-        Event Heading: 
-        <input [(ngModel)]="event.eventHeading" placeholder="Enter Event Heading"/>
+<div class="container" style="padding-bottom:20px ;">
+    <div class="row">
+        <div class="col">
+            <div class="card mb-3">
+                <div class="card-header bg-primary" style="border-radius: 5px ;">
+                    <h1 class="text-secondary" style="padding:10px ;">Events Edit</h1>
+
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        Event Description: 
-        <input [(ngModel)]="event.eventDescription" placeholder="Enter Event Description"/>
+
+    <div class="col-lg-3">
+        <img class="imgBackground" src="assets/Images/EditIcon.png">
     </div>
-    <div>
-        Event Location: 
-        <input [(ngModel)]="event.eventLocation" placeholder="Enter Event Location"/>
+    <div class="col-lg-9 right">
+        <div class="row edit" *ngIf="event" (eventsUpdated)="updateEventList($event)">
+
+            <div class="col-lg-12 head">
+                <label>Event Head:</label>
+                <input class="form-control" type="text" [(ngModel)]="event.eventHeading" placeholder="Enter Event Heading..." />
+                <br>
+            </div>
+            <div class="col-lg-12">
+                <label>Event Description:</label>
+                <input class="form-control" type="text" [(ngModel)]="event.eventDescription" placeholder="Enter Event Description" />
+                <br>
+            </div>
+            <div class="col-lg-12">
+                <label>Event Location: </label>
+                <input class="form-control" type="text" [(ngModel)]="event.eventLocation" placeholder="Enter Event Location" />
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <label>Event Start Date:</label>
+                <input class="form-control" type="date" [(ngModel)]="event.eventDate" placeholder="Enter Event Date" />
+            </div>
+            <div class="col-lg-6">
+                <label>Event End Date:</label>
+                <input class="form-control" type="date" [(ngModel)]="event.eventTime" placeholder="Enter Event Time" />
+                <br>
+            </div>
+            <div class="col-lg-12">
+                <a [routerLink]="['/event/eventList']">
+                    <button class="btn btn-primary" (click)="createEvent(event)" (click)="getEvents()"
+                        *ngIf="!event.id">Create</button>
+                </a>
+
+                <a [routerLink]="['/event/eventList']">
+                    <button class="btn btn-primary" (click)="updateEvent(event)" (click)="getEvents()"
+                        *ngIf="event.id">Save</button>
+                </a>
+
+                <button style="margin:5px;" class="btn btn-danger" (click)="deleteEvent(event)" *ngIf="event.id">Delete</button>
+
+                <a style="margin:5px;"  [routerLink]="['/event/eventList']">
+                    <button class="btn btn-success">Back to List</button>
+                </a>
+                
+            </div>
+            
+
+        </div>
     </div>
-    <div>
-        Event Date: 
-        <input [(ngModel)]="event.eventDate" placeholder="Enter Event Date"/>
-    </div>
-    <div>
-        Event Time: 
-        <input [(ngModel)]="event.eventTime" placeholder="Enter Event Time"/>
-    </div>
-    <button (click)="createEvent(event)" *ngIf="!event.Id">Create</button>
-    <button (click)="updateEvent(event)" *ngIf="event.Id">Save</button>
-    <button (click)="deleteEvent(event)" *ngIf="event.Id">Delete</button>
-    
 </div>

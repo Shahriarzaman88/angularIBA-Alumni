@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 import { Event } from '../../Models/event';
 import {EventService} from '../../shared/event.service'
@@ -10,22 +11,28 @@ import {EventService} from '../../shared/event.service'
 })
 export class EventDetailComponent implements OnInit {
 
-  constructor(private EventService: EventService) { }
+  constructor(private EventService: EventService, private route: ActivatedRoute) { }
 
-  events: Event[] = [];
-  
+
+  event: Event= new Event()
 
   ngOnInit(): void {
     //this.events = this.EventService.getEvents();
-    this.getEvents();
-    console.log(this.events);
+    this.route.params.subscribe(routeParams => {
+      //this.loadUserDetail(routeParams.id);
+      //this.getEvents(this.route.snapshot.paramMap.get('id'));
+      this.getEvents(routeParams.id);
+    });
+    
+    
   }
-  getEvents() {
-    this.EventService.getEvents("Event").subscribe(
+  getEvents(id) {
+    let url= "Event/" + id
+    this.EventService.getEventsById(url).subscribe(
 
       (res) => {
-        this.events = res
-        console.log(this.events, "Event List");
+        this.event = res
+        console.log(res, "Event List");
       },
       (err) => {
         console.log("Error");

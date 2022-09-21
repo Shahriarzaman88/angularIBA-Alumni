@@ -1,0 +1,25 @@
+.imgBackground {
+    height: 60%;
+    width: 100%;
+}
+
+.right {
+    background: linear-gradient(to left, rgba(0,0,139,.5), rgba(0, 0, 139,.7));
+    color: rgb(255, 255, 240);
+    border-radius: 10px;
+}
+
+
+.edit {
+    padding: 10px;
+    
+
+}
+
+.head {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+

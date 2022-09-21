@@ -24,19 +24,19 @@ export class EventService {
 
  public updateEvent(event: Event) : Observable<any>
  {
-  return this.http.put(this.baseUrl, event);
+  return this.http.put(this.baseUrl + "Event/Update", event);
  }
 
  public createEvent(event: Event) : Observable<any>
  {
-  return this.http.post(this.baseUrl, event);
+  return this.http.post(this.baseUrl + "Event/Create", event);
  }
 
 
- //public deleteEvent(event: Event) : Observable<any>
- //{
-  //return this.http.delete(this.baseUrl, (event.id));
- //}
+ public deleteEvent(id: any) : Observable<any>
+ {
+  return this.http.delete(this.baseUrl + "Event/Delete/" + id);
+ }
 
  
 

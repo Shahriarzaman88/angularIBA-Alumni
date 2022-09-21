@@ -1,6 +1,6 @@
-<p>event-detail works!</p>
-<div class="container" *ngFor="let event of events">
-    <router-outlet></router-outlet>
+
+<div class="container">
+    
     <div class="row">
         <div class="col-md-8">
             <div class="text-md-right text-center">
@@ -13,8 +13,8 @@
                 <h1 class="text-secondary">Head: {{event.eventHeading}}</h1>
 
                 <h2 class=""><a></a></h2>
-                <h3 class="text-muted">Date: {{event.eventDate}}</h3>
-                <h3 class="text-muted">Time: {{event.eventTime}}</h3>
+                <h3 class="text-muted">Date: {{event.eventDate | date:'fullDate'}}</h3>
+                <h3 class="text-muted">Time: {{event.eventTime | date:'mediumTime'}}</h3>
                 <h3 class="text-muted">Location: {{event.eventLocation}}</h3>
             </div>
         </div>

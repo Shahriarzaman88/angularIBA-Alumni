@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Event } from '../../Models/event';
 import {EventService} from '../../shared/event.service'
 
@@ -12,15 +12,18 @@ import {EventService} from '../../shared/event.service'
 export class EventListComponent implements OnInit {
   
 
-  constructor(private EventService: EventService, private router: Router) { }
+  constructor(private EventService: EventService, private router: Router, private route: ActivatedRoute) { }
 
   events: Event[] = [];
   eventToEdit?: Event;
+
+  i = 0;
   
 
   ngOnInit(): void {
     this.getEvents();
     console.log(this.events);
+    
   }
   getEvents() {
     this.EventService.getEvents("Event").subscribe(
@@ -28,6 +31,7 @@ export class EventListComponent implements OnInit {
       (res) => {
         this.events = res
         console.log(this.events, "Event List");
+        this.i ++
       },
       (err) => {
         console.log("Error");
@@ -36,9 +40,10 @@ export class EventListComponent implements OnInit {
     )
   }
 
-  getEventById(id:any){
+  getEventById(id){
+    let url= "Event/" + id
     
-    this.EventService.getEventsById("Event").subscribe(
+    this.EventService.getEventsById(url).subscribe(
 
       (res) => {
         //this.subsUser = res.body
@@ -50,7 +55,7 @@ export class EventListComponent implements OnInit {
         console.log("Error");
       }
     )
-    this.router.navigate(['/event/eventDetail/:id']);
+    
     }
 
   updateEventList(events: Event[]){
@@ -65,6 +70,11 @@ export class EventListComponent implements OnInit {
   editEvent(event: Event){
     this.eventToEdit = event;
     this.router.navigate(['/event/eventEdit']);
+  }
+
+  deleteEvent(event: Event)
+  {
+    this.EventService.deleteEvent(event.id).subscribe((events: Event[]) => this.getEvents() );
   }
 
 }

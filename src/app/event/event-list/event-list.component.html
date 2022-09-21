@@ -1,4 +1,4 @@
-<p>event-list works!</p>
+
 <div class="container">
 
     <div class="row">
@@ -25,7 +25,7 @@
 
                     </div>
                     <div class="row">
-                        <button class="btn btn-primary" (click)="initNewEvent()">Create New Event</button>
+                        <a class="btn btn-primary" style="margin:15px ;" [routerLink]="['/event/eventAdd', 'Add']">Create New Event</a>
                     </div>
                     <table class="table table-striped">
                         <thead class="bg-secondary text-info">
@@ -42,19 +42,19 @@
                         <tbody>
 
                             <tr *ngFor="let event of events">
-                                <td Class="d-none d-sm-block">1</td>
+                                <td Class="d-none d-sm-block">{{i}}</td>
                                 <td>{{event.eventHeading}}</td>
                                 <td>{{event.eventLocation}}</td>
-                                <td>{{event.eventDate}}</td>
-                                <td Class="d-none d-sm-block">{{event.eventTime}}</td>
+                                <td>{{event.eventDate | date:'fullDate'}}</td>
+                                <td Class="d-none d-sm-block">{{event.eventTime | date:'mediumTime'}}</td>
 
-                                <td>
+                                <td >
                                     <!--  <a routerLink="/event/eventDetail/:" class="btn btn-secondary"></a>  !-->
                                         
-                                    <button (click)="getEventById(id)" class="btn btn-primary">Details</button>
+                                    <a style="margin:2px ;" [routerLink]="['/event/eventDetail', event.id]" class="btn btn-primary">Details</a>
                                     
-                                    <button (click)="editEvent(event)" class="btn btn-success">Edit</button>
-                                    <button (click)="editEvent(event)" class="btn btn-danger">Delete</button>
+                                    <a style="margin: 2px ;" [routerLink]="['/event/eventEdit', 'Edit', event.id]" class="btn btn-success">Edit</a>
+                                    <button style="margin: 2px ;" (click)="deleteEvent(event)" class="btn btn-danger">Delete</button>
                                     
                                    
                                     <!--
@@ -65,7 +65,7 @@
                             </tr>
 
                         </tbody>
-                        <tbody>
+                        <!--<tbody>
 
                             <tr>
                                 <td Class="d-none d-sm-block">2</td>
@@ -76,7 +76,7 @@
 
                                 <td >
                                     <a routerLink="/event/eventDetail" class="btn btn-secondary">
-                                        <button class="btn btn-primary">Details</button>
+                                        <button class="btn btn-primary" >Details</button>
                                     </a>
                                     <button *ngFor="event" (click)="editEvent(event)" class="btn btn-success">Edit</button>
                                     <button class="btn btn-danger">Delete</button>
@@ -86,7 +86,7 @@
                                 </td>
                             </tr>
 
-                        </tbody>
+                        </tbody>  !-->
                     </table>
 
                     <!-- Pagination -->
@@ -117,5 +117,5 @@
     </div>
 </section>
 
-<app-event-edit [event]="eventToEdit"></app-event-edit>
-<router-outlet></router-outlet>
+<!--<app-event-edit [event]="eventToEdit"></app-event-edit>
+<router-outlet></router-outlet> !-->

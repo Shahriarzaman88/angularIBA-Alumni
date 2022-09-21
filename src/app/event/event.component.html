@@ -5,22 +5,22 @@
 <div class="Events">
     <div class="EventsCenter">
         <div class="EventsCenterTop">
-            <i class="fas fa-calendar-alt"></i> Events
+            <i class="fas fa-calendar-alt"></i>&nbsp;Events
         </div>
         <div class="EventsCenterBottom" >
             <div class="EventsCenterBottomContainer" *ngFor="let event of events">
                 <div class="EventsContainerLeft">
-                    <a routerLink="/event/eventDetail/:id" >
-                        <div class="EventsContainerLeftMonth">{{event.eventDate}}</div>
-                        <div class="EventsContainerLeftDate">{{event.id}}</div>
-                        <div class="EventsContainerLeftYear"></div>
+                    <a [routerLink]="['/event/eventDetail', event.id]">
+                        <div class="EventsContainerLeftMonth">{{event.eventDate| date:'MMM'}}</div>
+                        <div class="EventsContainerLeftDate">{{event.eventDate | date:'dd'}}</div>
+                        <div class="EventsContainerLeftYear">{{event.eventDate | date:'YYYY'}}</div>
                     </a>
                 </div>
                 <div class="EventsContainerRight">
-                    <a routerLink="/event/eventDetail/:id" >
+                    <a [routerLink]="['/event/eventDetail', event.id]" >
                         <div class="EventsContainerRightHeading">Heading:{{event.eventHeading}}</div>
                         <div class="EventsContainerRightLocation">Location:{{event.eventLocation}}</div>
-                        <div class="EventsContainerRightTime">Time: {{event.eventTime}}</div>
+                        <div class="EventsContainerRightTime">Time: {{event.eventTime | date:'mediumTime'}}</div>
                     </a>
                 </div>
             </div>
